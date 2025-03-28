@@ -54,18 +54,9 @@ def process_file():
     with open(output_svg_path, 'r', encoding='utf-8') as f:
         svg_content = f.read()
 
-    svg_content = svg_content.replace(
-    'transform="translate(439.47 270.86)"', 'transform="translate(0 0)"'
-    )
-    svg_content = svg_content.replace(
-    '.cls-1', 'text'
-    ) 
-    svg_content = svg_content.replace(
-    'font-family: ArialMT, Arial;', 'font-family: "Cairo", sans-serif;'
-    )
-    svg_content = svg_content.replace(
-    'font-size: 27px;', 'font-size: 35px; text-transform: capitalize;'
-    )
+
+
+
     with open(output_svg_path, 'w', encoding='utf-8') as f:
             f.write(svg_content)
 # Replace placeholder text with a properly positioned tspan
