@@ -67,11 +67,11 @@ def process_file():
     # Replace placeholder text with the user's n
     #
     newtext="" 
-    name=name.split()
+    name1=name.split()
     for x,i in enumerate(name):
         if not is_arabic(i):
             i =i.capitalize()
-        newtext+=f'<text x="50%" y="{19.5+(x*4)}%" dominant-baseline="middle" text-anchor="middle" font-size="45px" style="text-transform: capitalize;" fill="white">{i}</text>'
+    newtext+=f'<text x="50%" y="{20}%" dominant-baseline="middle" text-anchor="middle"  style="text-transform: capitalize;" fill="white">{name}</text>'
     svg_content = re.sub(r'<text[^>]*>.*?</text>', newtext, svg_content, flags=re.DOTALL)
     # Save the modified SVG with UTF-8 encoding
     with open(output_svg_path, 'w', encoding='utf-8') as f:

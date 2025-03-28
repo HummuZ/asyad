@@ -15,7 +15,7 @@
         fill: #fff;
         filter: url(#drop-shadow-1);
         font-family: 'Cairo', sans-serif;
-        font-size: 27px;
+        font-size: 35px;
       }
     </style>
     <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
